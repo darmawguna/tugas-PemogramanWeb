@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> External Style</title>
+    <link rel="stylesheet" type="text/css" href="biodata.css">
+</head>
+<body>
+    <div class="container">
+    <div class="wrapper">
+    <main class="content">
+        <div style="padding: 10px;">
+            <h2 style="margin: 0px;">Update Biodata Karyawan</h2>
+            <hr />
+            <form action="formulir.php" method="post" onsubmit="return ValidasiForm()" name="FormReg">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" value=" " placeholder="Tuliskan Nama Anda" /><br />
+                            <small style="color: red;" id="err_password"></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>:</td>
+                        <!--Gunakan atribut checked untuk memilih radio-->
+                        <td><input type="radio" name="jenis_kelamin" value="laki-laki" checked />Laki-Laki
+                            <input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan<br />
+                            <small style="color: red;" id="err_jenis_kelamin"></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobi</td>
+                        <td>:</td>
+                        <td><input type="checkbox" name="hobi" value="Membaca" />Membaca Buku
+                            <!--Gunakan atribur checked untuk memilih checkbox-->
+                            <input type="checkbox" name="hobi" value="Menulis" checked />Menulis
+                            <input type="checkbox" name="hobi" value="Memancing" />Memancing<br />
+                            <small style="color: red;" id="err_hobi"?></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asal Kota</td>
+                        <td>:</td>
+                        <td> <select name="asal_kota">
+<option value="Kota Jakarta"> Jakarta</option>
+<option>Bandung</option>
+<!--Gunakan atribut selected untuk memilih option-->
+<option value="Kota Semarang" selected>Semarang</option>
+</select><br/>
+                        <small style="color: red" id="err_asal_kota"></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Komentar</td>
+                        <td>:</td>
+                        <td><textarea name="komentar" rows="5" cols="20"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right"><button> simpan</button> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+</main>
+</div>
+<footer class="footer">
+<font color="white"></white>
+</footer>
+</div>
+</body>
+</html>
